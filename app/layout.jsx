@@ -38,6 +38,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/pic.jpg" type="image/x-icon" />
+        <meta
+          name="google-site-verification"
+          content="jsYGiwxtNM1TKV8dNlL0SwPb7rtKww-zlgfHnJQZg-I"
+        />
         {/* JSON-LD Schema for Google */}
         <script
           type="application/ld+json"
