@@ -42,6 +42,10 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="jsYGiwxtNM1TKV8dNlL0SwPb7rtKww-zlgfHnJQZg-I"
         />
+        <meta
+          name="google-site-verification"
+          content="6FEMxVX2rXlnhalfTm1dPKfNTjuGAb0iSCOwmF0qfRQ"
+        />
         {/* JSON-LD Schema for Google */}
         <script
           type="application/ld+json"
