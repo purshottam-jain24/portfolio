@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "../components/ui/badge";
 import { motion } from "framer-motion";
 
 const portfolioData = {
