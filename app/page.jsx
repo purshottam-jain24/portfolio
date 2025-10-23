@@ -5,21 +5,22 @@ import Image from "next/image";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { Badge } from "../components/ui/badge";
 import { motion } from "framer-motion";
+import VisitorCounter from "../components/VisitorCounter";
 
 const portfolioData = {
   name: "Purshottam Jain",
   title: "Full Stack Developer",
-  bio: "Shipping clean, performant code to create intuitive and engaging web experiences.",
+  bio: "Hi, I'm Purshottam. I build fast, intuitive, and engaging web applications that people genuinely enjoy using.",
+  about: {
+    p1: "I believe great development is about more than just clean code—it's about solving real-world problems for real people. I love digging into the 'why' of a project to deliver a product that feels intuitive and performs well, even under pressure.",
+    p2: "As a Software Developer, I get to do this every day. When I'm not at the keyboard, you'll usually find me in the world of games.",
+  },
   contact: {
     email: "purshottam.jain24@gmail.com",
     social: {
       github: "https://github.com/purshottam-jain24",
       linkedin: "https://www.linkedin.com/in/purshottam-jain24",
     },
-  },
-  about: {
-    p1: "For me, great development is about more than just writing code—it's about solving real-world problems. My focus is on understanding the core needs of a project and delivering a product that feels intuitive and performs flawlessly under pressure.",
-    p2: "As a Software Developer, I get to do this every day. When I step away from the keyboard, you'll often find me immersed in the world of gaming.",
   },
   experience: [
     {
@@ -120,7 +121,7 @@ const portfolioData = {
       imageUrl:
         "https://www.skygazeindia.com/_next/image?url=%2Flogo.png&w=256&q=75",
       isLive: true,
-      technologies: ["React", "TypeScript", "Styled Components", "Git"],
+      technologies: ["Next.js", "TypeScript", "Framer Motion", "Git"],
     },
     {
       title: "AffectionQuest",
@@ -129,63 +130,32 @@ const portfolioData = {
       link: "https://affectionquest.com/",
       imageUrl: "https://affectionquest.com/assets/hero-DuAjtFe1.png",
       isLive: true,
-      technologies: ["JavaScript", "React", "Next.js", "CSS3"],
-    },
-    {
-      title: "Alumni Sync Platform",
-      description:
-        "Architected a full-stack platform to connect students and alumni, featuring job boards and event postings. Designed and built RESTful APIs with Node.js/Express, created documentation with Swagger, and developed the frontend with React.",
-      link: null,
-      isLive: false,
-      technologies: [
-        "React",
-        "Node.js",
-        "Express",
-        "PostgreSQL",
-        "Prisma",
-        "Swagger",
-      ],
-    },
-    {
-      title: "Waste Wise",
-      description:
-        "A full-stack waste management system connecting residents with local collectors. Users can request garbage pickups, and collectors receive real-time notifications. Built on Next.js with Firebase for backend services, including authentication and Firestore DB.",
-      link: null,
-      isLive: false,
-      technologies: ["Next.js", "Firebase", "Tailwind CSS", "React"],
+      technologies: ["Cloud Functions", "React", "Tailwind CSS", "Firebase"],
     },
     {
       title: "VIPS Feedback Portal",
       description:
         "Developed a secure portal for students to provide anonymous feedback to faculty. The system allows faculty to review comments and post placement updates, ensuring a confidential and constructive communication channel.",
-      link: null,
-      isLive: false,
-      technologies: ["React", "Node.js", "MongoDB", "JWT", "Material UI"],
+      link: "http://student-feedback.vips.edu/",
+      isLive: true,
+      technologies: ["Next.js", "Firebase Admin", "Tailwind CSS"],
     },
-    {
-      title: "Silk & Sins (Headless E-commerce)",
-      description:
-        "Built a luxury e-commerce frontend using a headless architecture. Leveraged Wix as a CMS and built a fast, custom user experience with Next.js and Tailwind CSS, consuming product data via REST APIs.",
-      link: null,
-      isLive: false,
-      technologies: ["Next.js", "Wix (Headless)", "Tailwind CSS", "REST APIs"],
-    },
-    {
-      title: "Employee Directory Management",
-      description:
-        "Built a secure internal tool for an organization to manage employee data. The system features role-based access, allowing top-level officers to view and manage comprehensive employee information efficiently.",
-      link: null,
-      isLive: false,
-      technologies: ["React", "Node.js", "Express", "JWT", "MongoDB"],
-    },
-    {
-      title: "Mass Mailing API Integration",
-      description:
-        "Developed the frontend interface for a mass mailing system. Focused on integrating backend APIs to fetch and display mailing list data, track campaign status, and provide a user-friendly dashboard for system monitoring.",
-      link: null,
-      isLive: false,
-      technologies: ["React", "Axios", "REST APIs", "Postman"],
-    },
+    // {
+    //   title: "Waste Wise",
+    //   description:
+    //     "A full-stack waste management system connecting residents with local collectors. Users can request garbage pickups, and collectors receive real-time notifications. Built on Next.js with Firebase for backend services, including authentication and Firestore DB.",
+    //   link: null,
+    //   isLive: true,
+    //   technologies: ["Next.js", "Firebase", "Tailwind CSS", "React"],
+    // },
+    // {
+    //   title: "Silk & Sins (Headless E-commerce)",
+    //   description:
+    //     "Built a luxury e-commerce frontend using a headless architecture. Leveraged Wix as a CMS and built a fast, custom user experience with Next.js and Tailwind CSS, consuming product data via REST APIs.",
+    //   link: null,
+    //   isLive: false,
+    //   technologies: ["Next.js", "Wix (Headless)", "Tailwind CSS", "REST APIs"],
+    // },
   ],
 };
 
@@ -195,7 +165,7 @@ const fadeInUp = {
 };
 
 export default function Portfolio() {
-  const INITIAL_PROJECTS_COUNT = 3;
+  const INITIAL_PROJECTS_COUNT = 6;
   const PROJECTS_TO_LOAD = 3;
 
   const [visibleProjects, setVisibleProjects] = useState(
@@ -597,6 +567,9 @@ export default function Portfolio() {
               </a>
               .
             </p>
+            <div className="flex justify-center mt-2">
+              <VisitorCounter />
+            </div>
           </motion.footer>
         </main>
       </div>

@@ -1,9 +1,10 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
-  title: "Purshottam Jain | Web Developer | Next.js & Modern Websites",
+  title: "Purshottam Jain | Software Developer (Next.js & React)",
   description:
-    "I help startups and small businesses build fast, SEO-friendly websites using Next.js, React, and Tailwind CSS. Explore my projects and hire me today.",
+    "I'm Purshottam, a freelance web developer specializing in Next.js. I turn ideas into high-performance, SEO-ready websites. Let's build something great.",
   keywords: [
     "Next.js developer",
     "Freelance web developer India",
@@ -35,7 +36,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
         <link rel="shortcut icon" href="/pic.jpg" type="image/x-icon" />
         <meta
@@ -65,7 +66,10 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
