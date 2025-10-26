@@ -11,11 +11,12 @@ import VisitorCounter from "../components/VisitorCounter.js";
 const portfolioData = {
   name: "Purshottam Jain",
   title: "Full Stack Developer",
-  bio: "Hi, I'm Purshottam. I build fast, intuitive, and engaging web applications that people genuinely enjoy using.",
+  bio: "Hey, I’m Purshottam — a full-stack developer who loves turning ideas into beautiful, high-performance web experiences. I’m all about building things that look great, run fast, and actually make people’s lives easier.",
   about: {
-    p1: "I believe great development is about more than just clean code—it's about solving real-world problems for real people. I love digging into the 'why' of a project to deliver a product that feels intuitive and performs well, even under pressure.",
-    p2: "As a Software Developer, I get to do this every day. When I'm not at the keyboard, you'll usually find me in the world of games.",
+    p1: "I’m someone who loves building things that work smoothly and make sense to people. For me, good development isn’t just about writing code — it’s about understanding what a project really needs and making it simple for the user. I enjoy taking an idea, figuring out how it can be better, and then turning it into something that looks good and runs fast.",
+    p2: "Right now, I work as a Software Developer where I get to do this every day — solving real problems and learning something new with every project. When I’m not coding, I’m usually playing games, watching tech videos, or trying out new tools just for fun.",
   },
+
   contact: {
     email: "purshottam.jain24@gmail.com",
     social: {
@@ -30,7 +31,7 @@ const portfolioData = {
       company: "Aardo Solutions",
       companyUrl: "https://www.aardosolutions.com/",
       description:
-        "Spearheaded the end-to-end development of the company's primary corporate website, a key asset for brand marketing and lead generation. Translated Figma designs into a high-performance, responsive site using Next.js and Tailwind CSS, and engineered a secure contact form endpoint with NodeMailer and Firebase for reliable lead capture.",
+        "Leading the full-cycle development of Aardo Solutions’ main corporate website — a key marketing and lead-generation platform. I transformed Figma designs into a fast, responsive Next.js site with Tailwind CSS, and built a secure contact flow using NodeMailer and Firebase to capture leads reliably.",
       technologies: [
         "Next.js",
         "Tailwind CSS",
@@ -45,7 +46,7 @@ const portfolioData = {
       company: "Vivekananda Institute of Professional Studies",
       companyUrl: "https://vips.edu/",
       description:
-        "Assisted in the development and maintenance of internal web applications for the institution. Collaborated with senior developers to debug code, implement UI components using React and Material UI.",
+        "Worked with the internal dev team to build and maintain web applications that streamline campus operations. Focused on creating and debugging React components, improving UI consistency, and collaborating closely with senior developers to roll out updates faster.",
       technologies: [
         "React",
         "JavaScript",
@@ -61,7 +62,7 @@ const portfolioData = {
       company: "Vivekananda Institute of Professional Studies",
       companyUrl: "https://vips.edu/",
       description:
-        "Completed an intensive training program focused on foundational web development principles. Developed core skills in HTML, CSS, and JavaScript by building several responsive project replicas and interactive exercises.",
+        "Completed an intensive hands-on training program focused on web fundamentals. Built multiple responsive projects using HTML, CSS, and JavaScript — gaining a strong understanding of how to turn concepts into clean, interactive user interfaces.",
       technologies: ["HTML5", "CSS3", "JavaScript", "React"],
     },
   ],
@@ -98,7 +99,7 @@ const portfolioData = {
     {
       title: "Aardo Solutions",
       description:
-        "Spearheaded the end-to-end development of the company's official corporate website, a key asset for brand marketing and lead generation. Translated Figma designs into a high-performance site using Next.js and implemented a secure contact form with NodeMailer.",
+        "Developed the company’s official website from scratch — a sleek, high-performance site built with Next.js and Tailwind CSS. Added motion and interactivity using Framer Motion, and implemented a reliable contact form with NodeMailer for real-time lead capture.",
       link: "https://www.aardosolutions.com/",
       imageUrl:
         "https://www.aardosolutions.com/_next/image?url=%2Flogo.png&w=256&q=75",
@@ -108,7 +109,7 @@ const portfolioData = {
     {
       title: "Ngarg & Co.",
       description:
-        "Built a professional digital presence for a CA firm to enhance their brand authority and capture leads. Developed the site from the ground up using Next.js and set up a secure lead-capturing endpoint with NodeMailer.",
+        "Built a modern digital identity for a chartered accountancy firm — designed to boost credibility and capture leads efficiently. The site was developed end-to-end with Next.js and deployed seamlessly on Vercel with secure form handling via NodeMailer.",
       link: "https://ngarg.in/",
       imageUrl: "https://www.ngarg.in/_next/static/media/fav.9efafd18.png",
       isLive: true,
@@ -117,7 +118,7 @@ const portfolioData = {
     {
       title: "Skygaze India",
       description:
-        "As a developer at Aardo Solutions, I collaborated with the team to build and implement responsive, high-fidelity UI components for this premier skygazing and astronomy travel company, contributing to a rich, engaging user experience.",
+        "Collaborated with a talented team at Aardo Solutions to craft a responsive, visually stunning website for India’s leading astronomy travel company. Focused on building reusable UI components and ensuring a smooth, engaging experience across all devices.",
       link: "https://www.skygazeindia.com/",
       imageUrl:
         "https://www.skygazeindia.com/_next/image?url=%2Flogo.png&w=256&q=75",
@@ -127,7 +128,7 @@ const portfolioData = {
     {
       title: "AffectionQuest",
       description:
-        "Contributed to a unique quiz-based platform by implementing the core scoring mechanism to determine a user's love language. Focused on building out the user-facing logic and state management for a seamless interactive experience.",
+        "Helped shape this unique quiz-based app that identifies a user’s love language through interactive questions. My role was to design and implement the scoring logic and state management for a smooth and intuitive user journey.",
       link: "https://affectionquest.com/",
       imageUrl: "https://affectionquest.com/assets/hero-DuAjtFe1.png",
       isLive: true,
@@ -136,27 +137,11 @@ const portfolioData = {
     {
       title: "VIPS Feedback Portal",
       description:
-        "Developed a secure portal for students to provide anonymous feedback to faculty. The system allows faculty to review comments and post placement updates, ensuring a confidential and constructive communication channel.",
+        "Engineered a secure feedback system where students can share anonymous feedback and placement updates with faculty. Focused on authentication, real-time data flow, and ensuring confidentiality throughout the platform.",
       link: "http://student-feedback.vips.edu/",
       isLive: true,
       technologies: ["Next.js", "Firebase Admin", "Tailwind CSS"],
     },
-    // {
-    //   title: "Waste Wise",
-    //   description:
-    //     "A full-stack waste management system connecting residents with local collectors. Users can request garbage pickups, and collectors receive real-time notifications. Built on Next.js with Firebase for backend services, including authentication and Firestore DB.",
-    //   link: null,
-    //   isLive: true,
-    //   technologies: ["Next.js", "Firebase", "Tailwind CSS", "React"],
-    // },
-    // {
-    //   title: "Silk & Sins (Headless E-commerce)",
-    //   description:
-    //     "Built a luxury e-commerce frontend using a headless architecture. Leveraged Wix as a CMS and built a fast, custom user experience with Next.js and Tailwind CSS, consuming product data via REST APIs.",
-    //   link: null,
-    //   isLive: false,
-    //   technologies: ["Next.js", "Wix (Headless)", "Tailwind CSS", "REST APIs"],
-    // },
   ],
 };
 
