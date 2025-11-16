@@ -2,32 +2,51 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
-  title: "Purshottam Jain | Software Developer (Next.js & React)",
+  metadataBase: new URL("https://purshottam.is-a.dev"),
+  title: {
+    default:
+      "Purshottam Jain | Full Stack Developer (Next.js, React, Firebase)",
+    template: "%s | Purshottam Jain",
+  },
   description:
-    "I'm Purshottam, a freelance web developer specializing in Next.js. I turn ideas into high-performance, SEO-ready websites. Let's build something great.",
+    "Full Stack Developer specializing in Next.js, React, Tailwind & Firebase. I build fast, SEO-optimized, high-performance websites and web applications. Available for freelance and remote roles.",
   keywords: [
-    "Next.js developer",
-    "Freelance web developer India",
-    "React developer portfolio",
-    "Landing page developer",
-    "Affordable website design",
+    "Full Stack Developer",
+    "Next.js Developer",
+    "React Developer India",
+    "Freelance Web Developer India",
+    "Tailwind CSS Developer",
+    "Firebase Developer",
+    "Next.js Portfolio",
+    "Web Developer for Startup",
+    "Hire Web Developer India",
   ],
+  alternates: {
+    canonical: "https://purshottam.is-a.dev",
+  },
   openGraph: {
-    title: "Purshottam Jain | Web Developer Portfolio",
+    title: "Purshottam Jain | Full Stack Developer Portfolio",
     description:
-      "Building fast, modern websites with Next.js, React & Tailwind. Available for freelance & startup projects.",
-    url: "https://www.purshottamjain.me",
+      "Portfolio of Purshottam Jain — building fast, scalable, SEO-friendly websites with Next.js, React, Tailwind & Firebase.",
+    url: "https://purshottam.is-a.dev",
     siteName: "Purshottam Jain Portfolio",
+    type: "website",
+    locale: "en_US",
     images: [
       {
-        url: "/preview.png", // create a nice preview image for LinkedIn/WhatsApp shares
+        url: "/pic.jpg",
         width: 1200,
         height: 630,
-        alt: "Purshottam Jain Portfolio Preview",
+        alt: "Portfolio Preview – Purshottam Jain",
       },
     ],
-    locale: "en_US",
-    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Purshottam Jain | Full Stack Developer",
+    description:
+      "Building SEO-ready, high-performance applications with Next.js, React & Firebase.",
+    images: ["/pic.jpg"],
   },
   icons: {
     icon: "/pic.jpg",
@@ -39,6 +58,9 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
         <link rel="shortcut icon" href="/pic.jpg" type="image/x-icon" />
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* Google Site Verifications */}
         <meta
           name="google-site-verification"
           content="jsYGiwxtNM1TKV8dNlL0SwPb7rtKww-zlgfHnJQZg-I"
@@ -47,7 +69,8 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="6FEMxVX2rXlnhalfTm1dPKfNTjuGAb0iSCOwmF0qfRQ"
         />
-        {/* JSON-LD Schema for Google */}
+
+        {/* JSON-LD Schema for SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -55,17 +78,20 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Purshottam Jain",
-              jobTitle: "Web Developer",
-              url: "https://www.purshottamjain.me",
+              jobTitle: "Full Stack Developer",
+              url: "https://purshottam.is-a.dev",
+              image: "https://purshottam.is-a.dev/pic.jpg",
+              description:
+                "Full Stack Developer specializing in Next.js, React, Firebase & Tailwind CSS.",
               sameAs: [
-                "https://linkedin.com/in/yourprofile",
-                "https://github.com/yourgithub",
-                "https://twitter.com/yourtwitter",
+                "https://www.linkedin.com/in/purshottam-jain24",
+                "https://github.com/purshottam-jain24",
               ],
             }),
           }}
         />
       </head>
+
       <body>
         {children}
         <Analytics />

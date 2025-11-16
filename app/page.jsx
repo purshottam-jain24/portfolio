@@ -11,12 +11,11 @@ import VisitorCounter from "../components/VisitorCounter.js";
 const portfolioData = {
   name: "Purshottam Jain",
   title: "Full Stack Developer",
-  bio: "Hey, I’m Purshottam — a full-stack developer who loves turning ideas into beautiful, high-performance web experiences. I’m all about building things that look great, run fast, and actually make people’s lives easier.",
+  bio: "Full-stack developer with 1+ year of experience building high-performance, scalable, and user-focused applications using Next.js, Firebase, and Tailwind. I take products from concept to production with clean architecture, smooth UI, and measurable performance improvements.",
   about: {
-    p1: "I’m someone who loves building things that work smoothly and make sense to people. For me, good development isn’t just about writing code — it’s about understanding what a project really needs and making it simple for the user. I enjoy taking an idea, figuring out how it can be better, and then turning it into something that looks good and runs fast.",
-    p2: "Right now, I work as a Software Developer where I get to do this every day — solving real problems and learning something new with every project. When I’m not coding, I’m usually playing games, watching tech videos, or trying out new tools just for fun.",
+    p1: "I build meaningful digital experiences — not just websites. I focus on creating solutions that are fast, intuitive, reliable, and visually polished. My emphasis is on pragmatic architecture, performance, and UX that moves metrics.",
+    p2: "I currently work as a Software Developer where I ship full-stack features, lead performance improvements, design reusable component systems, and build production-ready products. Outside of work, I explore new tools, refine animations, and build small products that solve real problems.",
   },
-
   contact: {
     email: "purshottam.jain24@gmail.com",
     social: {
@@ -31,12 +30,12 @@ const portfolioData = {
       company: "Aardo Solutions",
       companyUrl: "https://www.aardosolutions.com/",
       description:
-        "Leading the full-cycle development of Aardo Solutions’ main corporate website — a key marketing and lead-generation platform. I transformed Figma designs into a fast, responsive Next.js site with Tailwind CSS, and built a secure contact flow using NodeMailer and Firebase to capture leads reliably.",
+        "Built the corporate marketing site from Figma to production using Next.js, Tailwind and Framer Motion. Created a reusable component library (10–12 components), optimized runtime and bundle size, and implemented a secure lead-capture flow (NodeMailer + server actions).",
       technologies: [
         "Next.js",
         "Tailwind CSS",
-        "NodeMailer",
         "Framer Motion",
+        "NodeMailer",
         "Git & GitHub",
       ],
     },
@@ -46,12 +45,12 @@ const portfolioData = {
       company: "Vivekananda Institute of Professional Studies",
       companyUrl: "https://vips.edu/",
       description:
-        "Worked with the internal dev team to build and maintain web applications that streamline campus operations. Focused on creating and debugging React components, improving UI consistency, and collaborating closely with senior developers to roll out updates faster.",
+        "Developed 15+ internal pages and 10+ admin features for campus apps. Implemented RBAC for admins, optimized key routes for performance, and fixed critical production issues across the platform (React + Firebase).",
       technologies: [
         "React",
         "JavaScript",
-        "Styled Components",
         "Material UI",
+        "Styled Components",
         "Firebase",
         "Git & GitHub",
       ],
@@ -62,7 +61,7 @@ const portfolioData = {
       company: "Vivekananda Institute of Professional Studies",
       companyUrl: "https://vips.edu/",
       description:
-        "Completed an intensive hands-on training program focused on web fundamentals. Built multiple responsive projects using HTML, CSS, and JavaScript — gaining a strong understanding of how to turn concepts into clean, interactive user interfaces.",
+        "Completed hands-on training on responsive UI, component design and frontend fundamentals. Built responsive interfaces using modern HTML/CSS and JS patterns.",
       technologies: ["HTML5", "CSS3", "JavaScript", "React"],
     },
   ],
@@ -72,7 +71,6 @@ const portfolioData = {
       "TypeScript",
       "React",
       "Next.js",
-      "HTML5 & CSS3",
       "Tailwind CSS",
       "Material UI",
       "Styled Components",
@@ -97,75 +95,83 @@ const portfolioData = {
   },
   projects: [
     {
-      title: "Aardo Solutions",
+      title: "VIPS Feedback Portal",
       description:
-        "Developed the company’s official website from scratch — a sleek, high-performance site built with Next.js and Tailwind CSS. Added motion and interactivity using Framer Motion, and implemented a reliable contact form with NodeMailer for real-time lead capture.",
+        "Large-scale internal portal used by 4+ departments and 1,000+ active users. Secure RBAC roles, anonymous feedback, faculty dashboards, real-time updates and scalable architecture using Next.js Server Actions + Firebase.",
+      link: "http://student-feedback.vips.edu/",
+      isLive: true,
+      imageUrl:
+        "https://student-feedback.vips.edu/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvipslogo.18ec150b.webp&w=1080&q=75&dpl=dpl_36653gfciVLN9JzwxbdXpSeiJRwE",
+      technologies: [
+        "Next.js",
+        "Firebase",
+        "Tailwind CSS",
+        "Server Actions",
+        "RBAC",
+      ],
+    },
+    {
+      title: "Aardo Solutions Website",
+      description:
+        "End-to-end corporate website optimized for responsiveness, accessibility, and lead generation. Reusable components, smooth micro-interactions and secure contact flows.",
       link: "https://www.aardosolutions.com/",
+      isLive: true,
       imageUrl:
         "https://www.aardosolutions.com/_next/image?url=%2Flogo.png&w=256&q=75",
-      isLive: true,
       technologies: ["Next.js", "Framer Motion", "NodeMailer", "Tailwind CSS"],
     },
     {
       title: "Ngarg & Co.",
       description:
-        "Built a modern digital identity for a chartered accountancy firm — designed to boost credibility and capture leads efficiently. The site was developed end-to-end with Next.js and deployed seamlessly on Vercel with secure form handling via NodeMailer.",
+        "Modern digital presence for a chartered accountancy firm with fast load times, lead capture automation, and polished UI deployed on Vercel.",
       link: "https://ngarg.in/",
-      imageUrl: "https://www.ngarg.in/_next/static/media/fav.9efafd18.png",
       isLive: true,
+      imageUrl: "https://www.ngarg.in/_next/static/media/fav.9efafd18.png",
       technologies: ["Next.js", "Tailwind CSS", "NodeMailer", "Vercel"],
     },
     {
       title: "Skygaze India",
       description:
-        "Collaborated with a talented team at Aardo Solutions to craft a responsive, visually stunning website for India’s leading astronomy travel company. Focused on building reusable UI components and ensuring a smooth, engaging experience across all devices.",
+        "Reduced bundle and improved load performance by replacing heavy background assets, fixed critical UI bugs and implemented a fully responsive navbar for a visually driven astronomy site.",
       link: "https://www.skygazeindia.com/",
+      isLive: true,
       imageUrl:
         "https://www.skygazeindia.com/_next/image?url=%2Flogo.png&w=256&q=75",
-      isLive: true,
-      technologies: ["Next.js", "TypeScript", "Framer Motion", "Git"],
+      technologies: ["Next.js", "Framer Motion", "TypeScript", "Git"],
     },
     {
-      title: "AffectionQuest",
+      title: "WantJob.in — Job Platform",
       description:
-        "Helped shape this unique quiz-based app that identifies a user’s love language through interactive questions. My role was to design and implement the scoring logic and state management for a smooth and intuitive user journey.",
-      link: "https://affectionquest.com/",
-      imageUrl: "https://affectionquest.com/assets/hero-DuAjtFe1.png",
+        "Production job portal with auth, admin job posting flows and Razorpay payments. Built with Next.js + Firebase and used by students to apply for live opportunities.",
+      link: "https://wantjob.in/",
       isLive: true,
-      technologies: ["Cloud Functions", "React", "Tailwind CSS", "Firebase"],
-    },
-    {
-      title: "VIPS Feedback Portal",
-      description:
-        "Engineered a secure feedback system where students can share anonymous feedback and placement updates with faculty. Focused on authentication, real-time data flow, and ensuring confidentiality throughout the platform.",
-      link: "http://student-feedback.vips.edu/",
-      isLive: true,
-      technologies: ["Next.js", "Firebase Admin", "Tailwind CSS"],
+      imageUrl: "https://wantjob.in/logo.png",
+      technologies: ["Next.js", "Firebase", "Razorpay", "Tailwind CSS"],
     },
   ],
 };
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.45, ease: "easeOut" },
+  },
 };
 
 export default function Portfolio() {
-  const INITIAL_PROJECTS_COUNT = 6;
+  const INITIAL_PROJECTS_COUNT = 5;
   const PROJECTS_TO_LOAD = 3;
-
   const [visibleProjects, setVisibleProjects] = useState(
     INITIAL_PROJECTS_COUNT
   );
-
-  const handleLoadMore = () => {
-    setVisibleProjects((prevCount) => prevCount + PROJECTS_TO_LOAD);
-  };
+  const handleLoadMore = () =>
+    setVisibleProjects((prev) => prev + PROJECTS_TO_LOAD);
 
   return (
-    <div className="min-h-screen bg-zinc-900 text-slate-300 font-sans selection:bg-amber-300 selection:text-zinc-900">
-      {/* Header */}
-      <header className="sticky top-0 z-40 w-full bg-zinc-900/75 backdrop-blur-sm">
+    <div className="min-h-screen bg-zinc-900 text-slate-300 font-sans selection:bg-amber-300 selection:text-zinc-900 antialiased">
+      <header className="sticky top-0 z-40 w-full bg-zinc-900/60 backdrop-blur-sm border-b border-zinc-800">
         <div className="mx-auto max-w-screen-xl px-6 py-3 md:px-12 lg:px-24">
           <nav className="flex items-center justify-between">
             <a
@@ -184,12 +190,12 @@ export default function Portfolio() {
                     >
                       {item}
                       <motion.div
-                        className="absolute bottom-[-4px] left-0 h-[2px] w-full bg-amber-300"
+                        className="absolute bottom-[-4px] left-0 h-[2px] w-full bg-amber-300 origin-left"
                         variants={{
                           hidden: { scaleX: 0 },
                           visible: { scaleX: 1 },
                         }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 0.25 }}
                       />
                     </a>
                   </motion.li>
@@ -202,8 +208,8 @@ export default function Portfolio() {
                     return (
                       <motion.li
                         key={key}
-                        whileHover={{ scale: 1.2, y: -2 }}
-                        whileTap={{ scale: 0.9 }}
+                        whileHover={{ scale: 1.12, y: -2 }}
+                        whileTap={{ scale: 0.95 }}
                       >
                         <a
                           href={value}
@@ -218,12 +224,13 @@ export default function Portfolio() {
                   }
                 )}
                 <motion.li
-                  whileHover={{ scale: 1.2, y: -2 }}
-                  whileTap={{ scale: 0.9 }}
+                  whileHover={{ scale: 1.12, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <a
                     href={`mailto:${portfolioData.contact.email}`}
                     className="block hover:text-slate-200"
+                    aria-label="Email"
                   >
                     <Mail className="h-5 w-5" />
                   </a>
@@ -235,33 +242,48 @@ export default function Portfolio() {
       </header>
 
       <SmoothScrollWrapper>
-        {/* Main Content Area */}
         <div className="mx-auto max-w-screen-md px-6 py-12 md:px-12 lg:px-8 lg:py-20">
           <main>
-            {/* Hero/Intro Section */}
             <motion.section
-              className="mb-24 text-center"
+              className="mb-20 text-center"
               initial="initial"
               animate="animate"
-              variants={{ animate: { transition: { staggerChildren: 0.1 } } }}
+              variants={{ animate: { transition: { staggerChildren: 0.08 } } }}
             >
               <motion.h1
                 variants={fadeInUp}
-                className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"
+                className="text-4xl font-extrabold tracking-tight text-slate-200 sm:text-5xl"
               >
                 {portfolioData.title}
               </motion.h1>
               <motion.p
                 variants={fadeInUp}
-                className="mt-6 max-w-xl mx-auto text-lg leading-relaxed"
+                className="mt-6 max-w-xl mx-auto text-lg leading-relaxed text-slate-300"
               >
                 {portfolioData.bio}
               </motion.p>
+              <motion.div
+                variants={fadeInUp}
+                className="mt-8 flex items-center justify-center gap-4"
+              >
+                <a
+                  href={`mailto:${portfolioData.contact.email}`}
+                  className="inline-flex items-center gap-3 rounded-lg bg-amber-500/10 px-5 py-3 font-medium text-amber-300 hover:bg-amber-500/20 transition"
+                >
+                  Contact Me
+                </a>
+                <a
+                  href="/resume.pdf"
+                  className="inline-flex items-center gap-3 rounded-lg border border-amber-500/20 px-5 py-3 text-sm font-medium text-slate-200 hover:border-amber-400 transition"
+                >
+                  Download Resume
+                </a>
+              </motion.div>
             </motion.section>
-            {/* About Section */}
+
             <motion.section
               id="about"
-              className="mb-24 scroll-mt-20"
+              className="mb-16 scroll-mt-20"
               initial="initial"
               whileInView="animate"
               viewport={{ once: true, amount: 0.3 }}
@@ -270,19 +292,53 @@ export default function Portfolio() {
               <h2 className="text-2xl font-bold tracking-tight text-slate-200 mb-6">
                 About Me
               </h2>
-              <div>
-                <p className="mb-4">{portfolioData.about.p1}</p>
-                <p>{portfolioData.about.p2}</p>
+              <div className="grid gap-6 md:grid-cols-3">
+                <div className="md:col-span-2">
+                  <p className="mb-4 text-slate-300">
+                    {portfolioData.about.p1}
+                  </p>
+                  <p className="text-slate-300">{portfolioData.about.p2}</p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <div className="rounded-lg border border-zinc-800 bg-zinc-900/30 p-4">
+                    <h3 className="text-sm font-semibold text-slate-200">
+                      Primary Stack
+                    </h3>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {["Next.js", "Firebase", "Tailwind", "Framer Motion"].map(
+                        (t) => (
+                          <Badge
+                            key={t}
+                            variant="secondary"
+                            className="bg-amber-400/10 text-amber-300 border border-amber-400/20"
+                          >
+                            {t}
+                          </Badge>
+                        )
+                      )}
+                    </div>
+                  </div>
+                  <div className="rounded-lg border border-zinc-800 bg-zinc-900/30 p-4">
+                    <h3 className="text-sm font-semibold text-slate-200">
+                      Available For
+                    </h3>
+                    <div className="mt-3 flex flex-col gap-2">
+                      <span className="text-sm text-slate-300">
+                        Remote roles · Freelance · Contract work
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </motion.section>
-            {/* Experience Section */}
+
             <motion.section
               id="experience"
-              className="mb-24 scroll-mt-20"
+              className="mb-16 scroll-mt-20"
               initial="initial"
               whileInView="animate"
-              viewport={{ once: true, amount: 0.1 }}
-              variants={{ animate: { transition: { staggerChildren: 0.1 } } }}
+              viewport={{ once: true, amount: 0.12 }}
+              variants={{ animate: { transition: { staggerChildren: 0.06 } } }}
             >
               <motion.h2
                 variants={fadeInUp}
@@ -290,72 +346,62 @@ export default function Portfolio() {
               >
                 Work Experience
               </motion.h2>
-              <ol>
+              <ol className="space-y-8">
                 {portfolioData.experience.map((job, index) => (
-                  <motion.li key={index} variants={fadeInUp} className="mb-12">
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <header className="text-sm font-semibold uppercase tracking-wide text-slate-500 sm:w-1/4">
+                  <motion.li
+                    key={index}
+                    variants={fadeInUp}
+                    className="flex flex-col sm:flex-row gap-4"
+                  >
+                    <div className="sm:w-1/4">
+                      <div className="text-sm font-semibold uppercase tracking-wide text-slate-500">
                         {job.date}
-                      </header>
-                      <div className="sm:w-3/4">
-                        <h3 className="font-medium leading-snug text-slate-200">
-                          <a
-                            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-amber-300 group/link text-base transition-colors"
-                            href={job.companyUrl}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <span>
-                              {job.role} · {job.company}{" "}
-                              <ExternalLink className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
-                            </span>
-                          </a>
-                        </h3>
-                        <p className="mt-2 text-sm leading-normal">
-                          {job.description}
-                        </p>
-                        <ul
-                          className="mt-2 flex flex-wrap"
-                          aria-label="Technologies used"
+                      </div>
+                    </div>
+                    <div className="sm:w-3/4">
+                      <div className="flex items-center gap-3">
+                        <a
+                          href={job.companyUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-medium text-slate-200 hover:text-amber-300 inline-flex items-center gap-2"
                         >
-                          {job.technologies?.map((tech, techIndex) => (
-                            <li key={techIndex} className="mr-1.5 mt-2">
-                              <Badge
-                                variant="secondary"
-                                className="bg-amber-400/10 text-amber-300 border border-amber-400/20"
-                              >
-                                {tech}
-                              </Badge>
-                            </li>
-                          ))}
-                        </ul>
+                          <span>
+                            {job.role} · {job.company}
+                          </span>
+                          <ExternalLink className="h-4 w-4 text-slate-400" />
+                        </a>
+                      </div>
+                      <p className="mt-2 text-sm leading-normal text-slate-300">
+                        {job.description}
+                      </p>
+                      <div
+                        className="mt-3 flex flex-wrap gap-2"
+                        aria-label="Technologies used"
+                      >
+                        {job.technologies?.map((tech, i) => (
+                          <Badge
+                            key={i}
+                            variant="secondary"
+                            className="bg-amber-400/10 text-amber-300 border border-amber-400/20"
+                          >
+                            {tech}
+                          </Badge>
+                        ))}
                       </div>
                     </div>
                   </motion.li>
                 ))}
               </ol>
-              {/* <motion.div variants={fadeInUp}>
-              <a
-                className="inline-flex items-center font-medium leading-tight text-slate-200 group"
-                href="/resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>
-                  View Full Résumé{" "}
-                  <ExternalLink className="ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transition-none" />
-                </span>
-              </a>
-            </motion.div> */}
             </motion.section>
-            {/* Skills Section */}
+
             <motion.section
               id="skills"
-              className="mb-24 scroll-mt-20"
+              className="mb-16 scroll-mt-20"
               initial="initial"
               whileInView="animate"
-              viewport={{ once: true, amount: 0.2 }}
-              variants={{ animate: { transition: { staggerChildren: 0.1 } } }}
+              viewport={{ once: true, amount: 0.18 }}
+              variants={{ animate: { transition: { staggerChildren: 0.06 } } }}
             >
               <motion.h2
                 variants={fadeInUp}
@@ -363,27 +409,22 @@ export default function Portfolio() {
               >
                 Skills
               </motion.h2>
-              <div className="grid gap-8 md:grid-cols-2">
+              <div className="grid gap-6 md:grid-cols-2">
                 {Object.entries(portfolioData.skills).map(
                   ([category, skillsList]) => (
                     <motion.div key={category} variants={fadeInUp}>
-                      <h3 className="mb-4 text-lg font-medium text-slate-200">
+                      <h3 className="mb-3 text-lg font-medium text-slate-200">
                         {category}
                       </h3>
                       <div className="flex flex-wrap gap-2">
-                        {skillsList.map((skill, index) => (
-                          <motion.div
-                            key={index}
-                            whileHover={{ y: -4, scale: 1.05 }}
-                            transition={{ duration: 0.2 }}
+                        {skillsList.map((skill, idx) => (
+                          <Badge
+                            key={idx}
+                            variant="secondary"
+                            className="bg-amber-400/10 text-amber-300 border border-amber-400/20"
                           >
-                            <Badge
-                              variant="secondary"
-                              className="bg-amber-400/10 text-amber-300 border border-amber-400/20 cursor-default"
-                            >
-                              {skill}
-                            </Badge>
-                          </motion.div>
+                            {skill}
+                          </Badge>
                         ))}
                       </div>
                     </motion.div>
@@ -391,76 +432,67 @@ export default function Portfolio() {
                 )}
               </div>
             </motion.section>
+
             <motion.section
               id="projects"
-              className="mb-24 scroll-mt-20"
-              // No animation props on the parent anymore. They are moved to the children.
+              className="mb-16 scroll-mt-20"
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, amount: 0.08 }}
             >
               <motion.h2
                 variants={fadeInUp}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
                 className="text-2xl font-bold tracking-tight text-slate-200 mb-6"
               >
                 Projects
               </motion.h2>
-
               <ul className="space-y-4">
                 {portfolioData.projects
                   .slice(0, visibleProjects)
-                  .map((project, index) => {
-                    return (
-                      // --- THE FIX IS HERE ---
-                      // Each list item now controls its own animation.
-                      <motion.li
-                        key={index}
-                        variants={fadeInUp}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{ once: true, amount: 0.1 }} // amount triggers animation when 10% of the item is visible
-                      >
-                        <motion.div
-                          className="grid gap-4 sm:grid-cols-8 p-4 rounded-md transition-all"
-                          whileHover={{
-                            backgroundColor: "rgba(255, 255, 255, 0.05)",
-                            boxShadow: "0px 4px 20px -10px rgba(0,0,0,0.7)",
-                          }}
-                        >
-                          <div className="sm:col-span-2 pt-1">
-                            <a
-                              href={project.link || "#"}
-                              target="_blank"
-                              rel="noreferrer"
-                              className={!project.link ? "cursor-default" : ""}
-                            >
+                  .map((project, index) => (
+                    <motion.li
+                      key={index}
+                      variants={fadeInUp}
+                      initial="initial"
+                      whileInView="animate"
+                      viewport={{ once: true, amount: 0.12 }}
+                    >
+                      <div className="grid gap-4 sm:grid-cols-8 p-4 rounded-md transition-all bg-zinc-900/30 border border-zinc-800 hover:bg-zinc-900/40">
+                        <div className="sm:col-span-2 pt-1 flex items-center justify-center">
+                          <a
+                            href={project.link || "#"}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={!project.link ? "cursor-default" : ""}
+                          >
+                            <div className="w-40 h-20 relative rounded overflow-hidden border border-slate-200/6 bg-zinc-800">
                               <Image
                                 alt={`${project.title} thumbnail`}
                                 loading="lazy"
-                                width={2000}
-                                height={100}
-                                className="rounded border-2 border-slate-200/10 object-fill w-auto h-full"
+                                width={400}
+                                height={200}
+                                className="object-contain w-full h-full"
                                 src={
                                   project.imageUrl ||
-                                  "https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                  "https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0"
                                 }
                               />
-                            </a>
-                          </div>
-                          <div className="sm:col-span-6">
-                            <h3 className="font-medium leading-snug text-slate-200 flex items-center gap-2">
+                            </div>
+                          </a>
+                        </div>
+                        <div className="sm:col-span-6">
+                          <div className="flex items-start justify-between gap-4">
+                            <div className="flex items-center gap-2">
                               <a
-                                className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-amber-300 group/link text-base transition-colors"
                                 href={project.link || "#"}
                                 target="_blank"
                                 rel="noreferrer"
+                                className="font-medium text-slate-200 hover:text-amber-300 inline-flex items-center gap-2"
                               >
-                                <span>
-                                  {project.title}{" "}
-                                  {project.link && (
-                                    <ExternalLink className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
-                                  )}
-                                </span>
+                                <span>{project.title}</span>
+                                {project.link && (
+                                  <ExternalLink className="h-4 w-4 text-slate-400" />
+                                )}
                               </a>
                               {!project.isLive && (
                                 <Badge
@@ -470,61 +502,56 @@ export default function Portfolio() {
                                   In Progress
                                 </Badge>
                               )}
-                            </h3>
-                            <p className="mt-2 text-sm leading-normal">
-                              {project.description}
-                            </p>
-                            <ul
-                              className="mt-2 flex flex-wrap"
-                              aria-label="Technologies used"
-                            >
-                              {project.technologies.map((tech, techIndex) => (
-                                <li key={techIndex} className="mr-1.5 mt-2">
-                                  <Badge
-                                    variant="secondary"
-                                    className="bg-amber-400/10 text-amber-300 border border-amber-400/20"
-                                  >
-                                    {tech}
-                                  </Badge>
-                                </li>
-                              ))}
-                            </ul>
+                            </div>
                           </div>
-                        </motion.div>
-                      </motion.li>
-                    );
-                  })}
+                          <p className="mt-2 text-sm leading-normal text-slate-300">
+                            {project.description}
+                          </p>
+                          <div className="mt-3 flex flex-wrap gap-2">
+                            {project.technologies?.map((tech, techIndex) => (
+                              <Badge
+                                key={techIndex}
+                                variant="secondary"
+                                className="bg-amber-400/10 text-amber-300 border border-amber-400/20"
+                              >
+                                {tech}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </motion.li>
+                  ))}
               </ul>
 
-              {/* LOAD MORE BUTTON (This part is correct and doesn't need changes) */}
               {visibleProjects < portfolioData.projects.length && (
                 <motion.div
                   className="mt-8 text-center"
+                  variants={fadeInUp}
                   initial="initial"
                   whileInView="animate"
                   viewport={{ once: true, amount: 0.8 }}
-                  variants={fadeInUp}
                 >
                   <motion.button
                     onClick={handleLoadMore}
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
                     className="font-medium text-slate-200 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 rounded-lg px-6 py-3 transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
                   >
                     Load More
                   </motion.button>
                 </motion.div>
               )}
             </motion.section>
-            {/* Footer */}
+
             <motion.footer
               className="text-center text-sm text-slate-500 py-8"
               initial="initial"
               whileInView="animate"
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.6 }}
               variants={fadeInUp}
             >
-              <p>
+              <p className="text-slate-400">
                 Built with{" "}
                 <a
                   href="https://nextjs.org/"
@@ -543,7 +570,7 @@ export default function Portfolio() {
                 >
                   Tailwind CSS
                 </a>
-                , deployed with{" "}
+                , deployed on{" "}
                 <a
                   href="https://vercel.com/"
                   className="font-medium text-slate-400 hover:text-amber-300 transition-colors"
@@ -554,7 +581,7 @@ export default function Portfolio() {
                 </a>
                 .
               </p>
-              <div className="flex justify-center mt-2">
+              <div className="flex justify-center mt-3">
                 <VisitorCounter />
               </div>
             </motion.footer>

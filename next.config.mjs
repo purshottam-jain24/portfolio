@@ -7,6 +7,10 @@ const nextConfig = {
       "www.skygazeindia.com",
       "affectionquest.com",
       "plus.unsplash.com",
+      "student-feedback.vips.edu",
+      "ngarg.in",
+      "wantjob.in",
+      "vips.edu",
     ],
   },
 };
